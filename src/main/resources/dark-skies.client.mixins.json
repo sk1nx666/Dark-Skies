@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "dark.skies.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"SkyRenderingMixin",
+		"FogRendererMixin",
+		"AtmosphericFogModifierMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

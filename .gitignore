@@ -1,0 +1,40 @@
+# Optional nested folder (e.g. duplicate clone). Ignore everything except the marker.
+Dark Skies/*
+!Dark Skies/.gitkeep
+
+# Gradle
+out/
+classes/
+build/
+.gradle/
+
+# Eclipse
+*.launch
+.settings/
+.classpath
+.project
+
+# IntelliJ / IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+.vscode/
+
+# NetBeans
+nbproject/
+nbbuild/
+dist/
+nbdist/
+
+# macOS
+.DS_Store
+
+# Fabric Loom / dev runs
+run/
+remappedSrc/
+
+# Logs / dumps
+hs_err_pid*.log
+replay_pid*.log

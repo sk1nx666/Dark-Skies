@@ -1,0 +1,51 @@
+plugins {
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+}
+
+processResources {
+	def v = project.version
+	def sl = findProperty("modrinth_slug") ?: "dark-skies"
+	def gh = findProperty("github_repo") ?: "YOUR_GITHUB_USERNAME/dark-skies"
+	inputs.property "version", v
+	inputs.property "modrinth_slug", sl
+	inputs.property "github_repo", gh
+	filesMatching("fabric.mod.json") {
+		expand(
+				"version": v,
+				"modrinth_slug": sl,
+				"github_repo": gh
+		)
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 21
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${base.archivesName.get()}" }
+	}
+}
