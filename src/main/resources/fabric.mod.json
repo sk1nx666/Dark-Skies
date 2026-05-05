@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "skies_remastered",
+	"version": "${version}",
+	"name": "Skies Remastered",
+	"description": "Makes the overworld sky fully dark (uniform black) like deep night, including the horizon band.",
+	"authors": ["Skies Remastered"],
+	"license": "MIT",
+	"environment": "client",
+	"mixins": [
+		{
+			"config": "skies-remastered.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~1.21.11",
+		"java": ">=21"
+	}
+}
