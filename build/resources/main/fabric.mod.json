@@ -11,8 +11,8 @@
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/dark-skies",
-		"sources": "https://github.com/YOUR_GITHUB_USERNAME/dark-skies",
-		"issues": "https://github.com/YOUR_GITHUB_USERNAME/dark-skies/issues"
+		"sources": "https://github.com/sk1nx666/Dark-Skies",
+		"issues": "https://github.com/sk1nx666/Dark-Skies/issues"
 	},
 	"license": "MIT",
 	"environment": "client",
