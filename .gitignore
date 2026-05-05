@@ -1,3 +1,7 @@
+# Optional nested folder (e.g. duplicate clone). Ignore everything except the marker.
+Dark Skies/*
+!Dark Skies/.gitkeep
+
 # Gradle
 out/
 classes/
