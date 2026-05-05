@@ -1,15 +1,24 @@
 {
 	"schemaVersion": 1,
-	"id": "skies_remastered",
+	"id": "dark_skies",
 	"version": "1.0.3",
-	"name": "Skies Remastered",
+	"name": "Dark Skies",
 	"description": "Makes the overworld sky fully dark (uniform black) like deep night, including the horizon band.",
-	"authors": ["Skies Remastered"],
+	"authors": [
+		{
+			"name": "Dark Skies contributors"
+		}
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/dark-skies",
+		"sources": "https://github.com/YOUR_GITHUB_USERNAME/dark-skies",
+		"issues": "https://github.com/YOUR_GITHUB_USERNAME/dark-skies/issues"
+	},
 	"license": "MIT",
 	"environment": "client",
 	"mixins": [
 		{
-			"config": "skies-remastered.client.mixins.json",
+			"config": "dark-skies.client.mixins.json",
 			"environment": "client"
 		}
 	],

@@ -1,4 +1,4 @@
-package skies.remastered.mixin;
+package dark.skies.mixin;
 
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.render.SkyRendering;
@@ -17,7 +17,7 @@ public class SkyRenderingMixin {
 			method = "updateRenderState(Lnet/minecraft/client/world/ClientWorld;FLnet/minecraft/client/render/Camera;Lnet/minecraft/client/render/state/SkyRenderState;)V",
 			at = @At("TAIL")
 	)
-	private void skiesRemastered$uniformDarkSky(
+	private void darkSkies$uniformDarkSky(
 			ClientWorld world,
 			float tickProgress,
 			Camera camera,

@@ -1,4 +1,4 @@
-package skies.remastered.mixin;
+package dark.skies.mixin;
 
 import net.minecraft.block.enums.CameraSubmersionType;
 import net.minecraft.client.render.Camera;
@@ -17,7 +17,7 @@ public class FogRendererMixin {
 			method = "applyFog(Lnet/minecraft/client/render/Camera;ILnet/minecraft/client/render/RenderTickCounter;FLnet/minecraft/client/world/ClientWorld;)Lorg/joml/Vector4f;",
 			at = @At("RETURN")
 	)
-	private void skiesRemastered$matchingBlackFog(
+	private void darkSkies$matchingBlackFog(
 			Camera camera,
 			int viewDistance,
 			RenderTickCounter tickCounter,

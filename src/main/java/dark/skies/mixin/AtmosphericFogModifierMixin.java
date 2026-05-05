@@ -1,4 +1,4 @@
-package skies.remastered.mixin;
+package dark.skies.mixin;
 
 import net.minecraft.block.enums.CameraSubmersionType;
 import net.minecraft.client.render.Camera;
@@ -22,7 +22,7 @@ public class AtmosphericFogModifierMixin {
 			at = @At("RETURN"),
 			cancellable = true
 	)
-	private void skiesRemastered$blackAtmosphericTint(
+	private void darkSkies$blackAtmosphericTint(
 			ClientWorld world,
 			Camera camera,
 			int viewDistance,

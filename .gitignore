@@ -1,8 +1,8 @@
-Dark Skies/
-
 # Gradle
 out/
 classes/
+build/
+.gradle/
 
 # Eclipse
 *.launch
